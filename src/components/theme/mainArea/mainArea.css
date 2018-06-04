@@ -1,0 +1,4 @@
+.main-area {
+  flex-direction: column;
+  display: flex;
+  flex: 1; }

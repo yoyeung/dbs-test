@@ -1,0 +1,100 @@
+@import "./components/theme/common.scss";
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote {
+  &:before, &:after {
+    content: '';
+    content: none; } }
+
+q {
+  &:before, &:after {
+    content: '';
+    content: none; } }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+
+// custom css 
+body, html, #root {
+  height: 100%;
+  background-color: #222;
+  color: #eee;
+  font-family: 'Roboto';
+  font-size: 14px;
+}
+
+.react-tabs {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  &__tab-list {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    background-color:rgb(38,61,77);
+  }
+
+  &__tab {
+    border: 1px solid transparent;
+    border-bottom: none;
+    bottom: -1px;
+    position: relative;
+    list-style: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    color: #aaa;
+    .fa-times {
+      margin-left: 10px;
+      font-size: 12px;
+      vertical-align: center;
+    }
+    &--selected {
+      background:$hoverBgColor;
+      border-bottom: 1px $hoverColor solid;
+      color: #eee;
+    }
+
+    &--disabled {
+      color: GrayText;
+      cursor: default;
+    }
+   
+  }
+
+  &__tab-panel {
+    display: none;
+    margin: 10px;
+    flex: 1;
+    &--selected {
+      display: block;
+    }
+  }
+}

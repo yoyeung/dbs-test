@@ -1,0 +1,5 @@
+.pannel {
+  display: flex;
+  flex: 1;
+  background-color: #1e343e;
+  margin: 1px; }

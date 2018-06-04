@@ -1,0 +1,9 @@
+@import "../common.scss";
+
+.pannel {
+  display: flex;
+  flex: 1;
+  background-color: $hoverBgColor;
+  margin: $pannelMargin;
+}
+

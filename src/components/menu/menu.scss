@@ -1,0 +1,36 @@
+@import "../theme/common.scss";
+
+.menu {
+  flex: 0 1;
+  z-index: 9999;
+}
+
+.menu__list{
+  display: block;
+}
+
+.menu__item{
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px 17px;
+  vertical-align: center;
+  &:hover{
+    background-color: $hoverBgColor;
+    border-bottom: 1px $hoverColor solid;
+    .menu__submenu{
+      display: block;
+    }
+  }
+}
+
+.menu__submenu{
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 35px;
+  background-color: $hoverBgColor;
+}
+
+.menu__submenu-item{
+  padding: 10px 20px;
+}

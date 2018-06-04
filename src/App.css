@@ -1,0 +1,79 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body, html, #root {
+  height: 100%;
+  background-color: #222;
+  color: #eee;
+  font-family: 'Roboto';
+  font-size: 14px; }
+
+.react-tabs {
+  display: flex;
+  flex-direction: column;
+  flex: 1; }
+  .react-tabs__tab-list {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: #263d4d; }
+  .react-tabs__tab {
+    border: 1px solid transparent;
+    border-bottom: none;
+    bottom: -1px;
+    position: relative;
+    list-style: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    color: #aaa; }
+    .react-tabs__tab .fa-times {
+      margin-left: 10px;
+      font-size: 12px;
+      vertical-align: center; }
+    .react-tabs__tab--selected {
+      background: #1e343e;
+      border-bottom: 1px #04aaff solid;
+      color: #eee; }
+    .react-tabs__tab--disabled {
+      color: GrayText;
+      cursor: default; }
+  .react-tabs__tab-panel {
+    display: none;
+    margin: 10px;
+    flex: 1; }
+    .react-tabs__tab-panel--selected {
+      display: block; }

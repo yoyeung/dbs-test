@@ -1,0 +1,27 @@
+.menu {
+  flex: 0 1;
+  z-index: 9999; }
+
+.menu__list {
+  display: block; }
+
+.menu__item {
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px 17px;
+  vertical-align: center; }
+  .menu__item:hover {
+    background-color: #1e343e;
+    border-bottom: 1px #04aaff solid; }
+    .menu__item:hover .menu__submenu {
+      display: block; }
+
+.menu__submenu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 35px;
+  background-color: #1e343e; }
+
+.menu__submenu-item {
+  padding: 10px 20px; }
