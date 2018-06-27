@@ -9,4 +9,3 @@ matrix:
   NODE_VERSION:
     - 10
     - 8
-      
